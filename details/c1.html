@@ -14,18 +14,26 @@
     
     <main>
         <h2>Justification</h2>
-        <p>During the image simulation and processing phase of the MOSAIC project, which I participated in,  we carefully evaluated different technological solutions to optimize imaging performance. By consulting relevant scientific articles, we identified that the Cubic and Exponential Phase Masks provided the best results, leading us to implement both in our simulations.</p>
-        
+        <p>During the image simulation and processing phase of the MOSAIC project, which I participated in, we carefully evaluated different technological solutions to optimize imaging performance. By consulting relevant scientific articles, we identified that the Cubic and Exponential Phase Masks provided the best results, leading us to implement both in our simulations.</p>
+
         <p>Additionally, leveraging knowledge from signal processing coursework, we applied an Average Wiener Filter for image reconstruction. This choice was based on its effectiveness in minimizing the Mean Squared Error (MSE) within a given object distance range, making it the most suitable filtering approach for our specific imaging conditions.</p>
-        
+
+        <p>The optical and computational aspects of the system are closely integrated: the use of a phase mask extends the depth of field optically, while post-processing with Wiener filtering enhances the image quality. This combination allows for better performance than what either technique could achieve alone.</p>
         
         <h2>Proofs</h2>
+
+        <figure>
+            <img src="../src/images/schema.png" alt="Optical system schematic." width="600">
+            <figcaption>Full optical design of the system, simulated in Zemax. The design includes a phase mask placed between two germanium lenses, with a sensor positioned after a protective window. This setup was optimized to meet performance constraints while enabling depth-of-field extension through computational imaging..</figcaption>
+        </figure>
+        <!--
         <ul>
             <li><a href="../docs/Increase in depth of field taking into account.pdf" download>Download base article</a></li>
             <li><a href="../docs/Exponential_phase_masks.pdf" download>Download exponential phase-mask article</a></li>
             <li><a href="../docs/Extended depth of field through wave-front coding.pdf" download>Download cubic phase-mask article</a></li>
             <li><a href="../docs/5_wiener.pptx" download>Download Winer filter material</a></li>
         </ul>
+        -->
     </main>
 
 
