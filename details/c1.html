@@ -20,12 +20,20 @@
 
         <p>The optical and computational aspects of the system are closely integrated: the use of a phase mask extends the depth of field optically, while post-processing with Wiener filtering enhances the image quality. This combination allows for better performance than what either technique could achieve alone.</p>
         
+        <p>In this phase of the project, I specifically contributed to the co-design process by working at the interface between optical simulation and image processing. After the optical system was modeled in Zemax, we extracted the Point Spread Functions (PSFs) and I used them in MATLAB to simulate the final image formation process. This allowed us to assess how the optical aberrations introduced by the phase mask would affect the image quality, and to test whether our reconstruction method (Wiener filtering) could compensate for those distortions.</p>
+
+        <p>Through these simulations, I helped demonstrate the feasibility of using a phase mask in combination with computational post-processing as a viable solution to extend the depth of field while maintaining acceptable image quality. This integration of optical and digital techniques was key to achieving the project’s performance goals.</p>
+
+
         <h2>Proofs</h2>
 
-        <figure>
-            <img src="../src/images/schema.png" alt="Optical system schematic." width="600">
-            <figcaption>Full optical design of the system, simulated in Zemax. The design includes a phase mask placed between two germanium lenses, with a sensor positioned after a protective window. This setup was optimized to meet performance constraints while enabling depth-of-field extension through computational imaging..</figcaption>
+        <figure style="text-align: center;">
+            <img src="../src/images/schema.png" alt="Optical system schematic." width="600" style="display: block; margin: 0 auto;">
+            <figcaption>Caption: Full optical design of the system, simulated in Zemax. The design includes a phase mask placed between two germanium lenses, with a sensor positioned after a protective window. This setup was optimized to meet performance constraints while enabling depth-of-field extension through computational imaging.</figcaption>
         </figure>
+        <ul>
+            <li><a href="image_processing_code.html" target="_blank">Image Processing Matlab code</a></li>
+        </ul>
         <!--
         <ul>
             <li><a href="../docs/Increase in depth of field taking into account.pdf" download>Download base article</a></li>
